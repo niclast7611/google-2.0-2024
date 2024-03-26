@@ -1,4 +1,3 @@
-import { InputAdornment, OutlinedInput } from "@mui/material";
 import React, { useRef } from "react";
 import { IoIosSearch } from "react-icons/io";
 import { FaMicrophone } from "react-icons/fa";
@@ -34,22 +33,14 @@ const Home = (props: Props) => {
           className="h-28 w-80"
           loading="lazy"
         />
-        <div className="w-full max-w-md sm:max-w-xl lg:max-w-2xl mt-5">
-          <OutlinedInput
-            fullWidth
-            inputRef={searchInputRef}
-            className="rounded-full"
-            startAdornment={
-              <InputAdornment position="start">
-                <IoIosSearch className="h-5 w-5 ml-3" />
-              </InputAdornment>
-            }
-            endAdornment={
-              <InputAdornment position="end">
-                <FaMicrophone className="h-4 w-4 mr-3" />
-              </InputAdornment>
-            }
+        <div className="flex px-6 py-3 ml-10 mr-5 border border-gray-200 rounded-full hover:shadow-lg hover:ring-gray-100 max-w-3xl items-center w-full sm:max-w-xl lg:max-w-2xl mt-5">
+          <IoIosSearch className="h-5 w-5 mr-3 text-gray-400" />
+          <input
+            type="text"
+            ref={searchInputRef}
+            className="flex-grow w-full focus:outline-none "
           />
+          <FaMicrophone className="h-4 w-4 text-gray-400" />
         </div>
 
         <div className="flex flex-col w-1/2 space-y-2 justify-center mt-8 md:space-y-0 md:flex-row md:space-x-4">
