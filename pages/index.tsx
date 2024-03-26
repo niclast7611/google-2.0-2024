@@ -23,7 +23,7 @@ const Home = (props: Props) => {
     <div className="flex flex-col items-center h-screen justify-center">
       <HomePageHeader />
       <form
-        className="flex flex-col items-center flex-grow w-4/5 mt-0 md:mt-16 xl:mt-44"
+        className="flex flex-col items-center flex-grow w-4/5  mt-16 "
         // @ts-ignore
         onSubmit={handleSearch}
       >
