@@ -4,7 +4,7 @@ import Avatar from "../Avatar";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoIosSearch, IoMdNotifications } from "react-icons/io";
 import { IconButton } from "@mui/material";
-import { FaCaretDown } from "react-icons/fa";
+import { IoMdOptions } from "react-icons/io";
 
 type Props = {};
 
@@ -21,16 +21,18 @@ const GmailHeader = (props: Props) => {
           className="h-[4.5rem] w-28 cursor-pointer"
         />
       </div>
-      <form className="flex flex-grow px-6 ml-10 mr-5 max-w-xl items-center h-12 bg-[#E9F1FB] rounded-full">
-        <button type="submit">
-          <IoIosSearch className="h-5 w-5 dark:text-zinc-300 cursor-pointer transition transform duration-100 hover:scale-125 sm:mr-3" />
-        </button>
+      <form className="flex flex-grow px-3 ml-10 mr-5 max-w-xl items-center h-12 bg-[#E9F1FB] rounded-full">
+        <IconButton className="sm:mr-3">
+          <IoIosSearch className="h-5 w-5 dark:text-zinc-300 " />
+        </IconButton>
         <input
           type="text"
           placeholder="Search mail"
           className="flex-grow w-full focus:outline-none bg-transparent"
         />
-        <FaCaretDown className="h-5 w-5 dark:text-zinc-300 cursor-pointer transition transform duration-100 hover:scale-125 sm:ml-3" />
+        <IconButton className="sm:ml-3">
+          <IoMdOptions className="h-5 w-5 dark:text-zinc-300 " />
+        </IconButton>
       </form>
 
       <div className="flex space-x-2 items-center ">
