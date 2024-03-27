@@ -4,7 +4,6 @@ import { FaMicrophone } from "react-icons/fa";
 import Footer from "@/components/Footer";
 import { useRouter } from "next/router";
 import HomePageHeader from "@/components/Headers/HomePageHeader";
-import { useTheme } from "next-themes";
 import Logo from "@/lib/shared/Logo";
 
 type Props = {};
