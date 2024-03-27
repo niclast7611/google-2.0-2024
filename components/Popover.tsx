@@ -13,7 +13,7 @@ const Popover = (props: Props) => {
   };
   return (
     <div>
-      <IconButton className="h-9 w-9 dark:text-zinc-300" onClick={handleClick}>
+      <IconButton className="h-9 w-9 dark:text-zinc-300 " onClick={handleClick}>
         <BsFillGrid3X3GapFill />
       </IconButton>
       <OptionsPopover anchorEl={anchorEl} setAnchorEl={setAnchorEl} />

@@ -10,7 +10,7 @@ type Props = {};
 
 const GmailHeader = (props: Props) => {
   return (
-    <header className="flex w-full p-5 justify-between text-sm text-gray-700 items-center">
+    <header className="flex w-full p-5 justify-between text-sm text-gray-700 items-center absolute top-0">
       <div className="flex space-x-4 items-center">
         <IconButton className="dark:text-zinc-300">
           <GiHamburgerMenu className="h-5 w-5" />
@@ -21,7 +21,7 @@ const GmailHeader = (props: Props) => {
           className="h-full w-28 cursor-pointer"
         />
       </div>
-      <form className="flex flex-grow px-6 ml-10 mr-5 max-w-2xl items-center h-12 bg-gray-100">
+      <form className="flex flex-grow px-6 ml-10 mr-5 max-w-xl items-center h-12 bg-gray-100">
         <button type="submit">
           <IoIosSearch className="h-5 w-5 dark:text-zinc-300 cursor-pointer transition transform duration-100 hover:scale-125 sm:mr-3" />
         </button>
@@ -33,9 +33,9 @@ const GmailHeader = (props: Props) => {
         <FaCaretDown className="h-5 w-5 dark:text-zinc-300 cursor-pointer transition transform duration-100 hover:scale-125 sm:ml-3" />
       </form>
 
-      <div className="flex space-x-2 items-center">
+      <div className="flex space-x-2 items-center ">
         <Popover />
-        <IconButton className="dark:text-zinc-300">
+        <IconButton className="dark:text-zinc-300 ">
           <IoMdNotifications className="h-5 w-5" />
         </IconButton>
         <Avatar
