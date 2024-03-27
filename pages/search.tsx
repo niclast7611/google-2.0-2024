@@ -14,7 +14,7 @@ type Props = {
 const Search = ({ results }: Props) => {
   const router = useRouter();
   return (
-    <div>
+    <div className="bg-white dark:bg-zinc-800">
       <Head>
         <title>{router.query.term} - Google Search</title>
       </Head>

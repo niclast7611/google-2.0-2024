@@ -1,8 +1,6 @@
 import React, { MouseEvent, useState } from "react";
-import { BsFillGrid3X3GapFill } from "react-icons/bs";
 import Avatar from "@/components/Avatar";
-import { IconButton } from "@mui/material";
-import OptionsPopover from "../OptionsPopover";
+import Popover from "../Popover";
 type Props = {};
 
 const HomePageHeader = (props: Props) => {
@@ -22,10 +20,7 @@ const HomePageHeader = (props: Props) => {
       <div className="flex space-x-4 items-center">
         <p className="link">Gmail</p>
         <p className="link">Images</p>
-        <IconButton className="h-9 w-9" onClick={handleClick}>
-          <BsFillGrid3X3GapFill />
-        </IconButton>
-        <OptionsPopover anchorEl={anchorEl} setAnchorEl={setAnchorEl} />
+        <Popover />
 
         <Avatar
           url={

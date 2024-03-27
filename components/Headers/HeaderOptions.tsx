@@ -11,7 +11,7 @@ type Props = {};
 
 const HeaderOptions = (props: Props) => {
   return (
-    <div className="flex w-full text-gray-700 justify-evenly text-sm lg:text-base lg:justify-start lg:space-x-36 lg:pl-48 border-b-[1px]">
+    <div className="flex w-full text-gray-700 dark:text-zinc-400 justify-evenly text-sm lg:text-base lg:justify-start lg:space-x-36 lg:pl-48 border-b-[1px]">
       <div className="flex space-x-6">
         <HeaderOption
           icon={<CiSearch className="h-5 w-5" />}
