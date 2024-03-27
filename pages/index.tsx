@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import { IoIosSearch } from "react-icons/io";
 import { FaMicrophone } from "react-icons/fa";
-import Footer from "@/components/Footer";
+import Footer from "@/components/GoogleSearch/Footer";
 import { useRouter } from "next/router";
-import HomePageHeader from "@/components/Headers/HomePageHeader";
+import HomePageHeader from "@/components/GoogleSearch/Header/HomePageHeader";
 import Logo from "@/lib/shared/Logo";
 
 type Props = {};

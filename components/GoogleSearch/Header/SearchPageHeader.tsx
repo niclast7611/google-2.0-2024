@@ -7,7 +7,7 @@ import { FaMicrophone } from "react-icons/fa";
 import { useRouter } from "next/router";
 import HeaderOptions from "./HeaderOptions";
 import HeaderLogo from "@/lib/shared/HeaderLogo";
-import Popover from "../Popover";
+import Popover from "../../Popover";
 
 type Props = {};
 

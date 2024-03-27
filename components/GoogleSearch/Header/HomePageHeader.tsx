@@ -1,6 +1,6 @@
 import React, { MouseEvent, useState } from "react";
 import Avatar from "@/components/Avatar";
-import Popover from "../Popover";
+import Popover from "../../Popover";
 type Props = {};
 
 const HomePageHeader = (props: Props) => {

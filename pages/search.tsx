@@ -1,5 +1,5 @@
-import SearchPageHeader from "@/components/Headers/SearchPageHeader";
-import SearchResults from "@/components/SearchResults";
+import SearchPageHeader from "@/components/GoogleSearch/Header/SearchPageHeader";
+import SearchResults from "@/components/GoogleSearch/SearchResults";
 import { SearchResponse } from "@/lib/types";
 import dummyData from "@/response";
 import { GetServerSideProps, GetServerSidePropsContext } from "next";
