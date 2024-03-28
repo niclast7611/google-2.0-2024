@@ -9,16 +9,16 @@ const SecondaryHeader = (props: Props) => {
   return (
     <div className="border-b-[1px] flex">
       <SecondaryHeaderButtons
-        icon={<MdInbox className="h-5 w-5 mr-3" />}
+        icon={<MdInbox className="h-4 w-4 mr-3" />}
         title="Primary"
         selected
       />
       <SecondaryHeaderButtons
-        icon={<GoTag className="h-5 w-5 mr-3" />}
+        icon={<GoTag className="h-4 w-4 mr-3" />}
         title="Promotions"
       />
       <SecondaryHeaderButtons
-        icon={<MdOutlinePeopleOutline className="h-5 w-5 mr-3" />}
+        icon={<MdOutlinePeopleOutline className="h-4 w-4 mr-3" />}
         title="Social"
       />
     </div>

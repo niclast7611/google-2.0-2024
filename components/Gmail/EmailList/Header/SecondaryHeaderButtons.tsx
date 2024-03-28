@@ -9,7 +9,7 @@ type Props = {
 const SecondaryHeaderButtons = ({ icon, title, selected }: Props) => {
   return (
     <div
-      className={`min-w-56 px-4 py-3 hover:bg-gray-100 cursor-pointer ${
+      className={`min-w-56 px-2 py-3 hover:bg-gray-100 cursor-pointer ${
         selected
           ? "text-blue-600 border-blue-600 border-b-[3px]"
           : "border-transparent"
