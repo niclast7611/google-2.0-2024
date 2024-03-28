@@ -19,7 +19,7 @@ const EmailRow = ({ description, subject, title, date, id }: Props) => {
       className="flex w-full items-center px-2 h-12 border-b-[1px] cursor-pointer hover:shadow-md justify-between"
       onClick={() =>
         router.push({
-          pathname: "/mail",
+          pathname: "/inbox/mail",
           query: { id: id },
         })
       }
