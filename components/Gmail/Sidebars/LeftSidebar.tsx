@@ -11,7 +11,7 @@ import { IconButton } from "@mui/material";
 
 type Props = {};
 
-const Sidebar = (props: Props) => {
+const LeftSidebar = (props: Props) => {
   return (
     <section className="hidden sm:inline-flex w-1/5">
       <div className="flex flex-col w-full">
@@ -70,4 +70,4 @@ const Sidebar = (props: Props) => {
   );
 };
 
-export default Sidebar;
+export default LeftSidebar;

@@ -13,7 +13,7 @@ const Logo = (props: Props) => {
           : "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/800px-Google_2015_logo.svg.png"
       }
       alt="Google"
-      className="h-28 w-80"
+      className="h-28 w-72 object-contain"
       loading="lazy"
     />
   );

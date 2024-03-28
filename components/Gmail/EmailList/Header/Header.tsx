@@ -1,6 +1,6 @@
 import React from "react";
 import { MdOutlineCheckBoxOutlineBlank } from "react-icons/md";
-import { FaCaretDown } from "react-icons/fa";
+import { FaCaretDown, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { IoMdRefresh } from "react-icons/io";
 import { SlOptionsVertical } from "react-icons/sl";
 
@@ -17,6 +17,14 @@ const Header = (props: Props) => {
 
         <IoMdRefresh className="text-gray-500 w-4 h-4" />
         <SlOptionsVertical className="text-gray-500 w-3 h-3" />
+      </div>
+
+      <div className="flex items-center justify-center space-x-5">
+        <p className="text-xs text-gray-400">1-20 of 20</p>
+        <span className="flex items-center space-x-5">
+          <FaChevronLeft className="text-gray-400 w-3 h-3" />
+          <FaChevronRight className="text-gray-400 w-3 h-3" />
+        </span>
       </div>
     </header>
   );
