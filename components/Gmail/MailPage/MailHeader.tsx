@@ -15,48 +15,50 @@ import {
   MdDriveFileMoveOutline,
   MdLabelOutline,
 } from "react-icons/md";
+import { useRouter } from "next/router";
 
 type Props = {};
 
 const MailHeader = (props: Props) => {
+  const router = useRouter();
   return (
     <header className="flex p-4 items-center justify-between">
       <div className="flex">
-        <IconButton>
+        <IconButton onClick={() => router.push("/inbox")}>
           <IoMdArrowBack className="h-5 w-5 text-zinc-900" />
         </IconButton>
 
         <span className="flex space-x-3 px-3">
           <IconButton>
-            <HiOutlineArchiveBoxArrowDown className="h-4 w-4 text-zinc-900" />
+            <HiOutlineArchiveBoxArrowDown className="icon" />
           </IconButton>
           <IconButton>
-            <RiSpam2Line className="h-4 w-4 text-zinc-900" />
+            <RiSpam2Line className="icon" />
           </IconButton>
           <IconButton>
-            <FaRegTrashAlt className="h-4 w-4 text-zinc-900" />
-          </IconButton>
-        </span>
-        <span className="flex space-x-3 px-3 border-l-[1px] border-gray-200">
-          <IconButton>
-            <MdOutlineMarkEmailUnread className="h-4 w-4 text-zinc-900" />
-          </IconButton>
-          <IconButton>
-            <FaRegClock className="h-4 w-4 text-zinc-900" />
-          </IconButton>
-          <IconButton>
-            <MdAddTask className="h-4 w-4 text-zinc-900" />
+            <FaRegTrashAlt className="icon" />
           </IconButton>
         </span>
         <span className="flex space-x-3 px-3 border-l-[1px] border-gray-200">
           <IconButton>
-            <MdDriveFileMoveOutline className="h-4 w-4 text-zinc-900" />
+            <MdOutlineMarkEmailUnread className="icon" />
           </IconButton>
           <IconButton>
-            <MdLabelOutline className="h-4 w-4 text-zinc-900" />
+            <FaRegClock className="icon" />
           </IconButton>
           <IconButton>
-            <IoMdMore className="h-4 w-4 text-zinc-900" />
+            <MdAddTask className="icon" />
+          </IconButton>
+        </span>
+        <span className="flex space-x-3 px-3 border-l-[1px] border-gray-200">
+          <IconButton>
+            <MdDriveFileMoveOutline className="icon" />
+          </IconButton>
+          <IconButton>
+            <MdLabelOutline className="icon" />
+          </IconButton>
+          <IconButton>
+            <IoMdMore className="icon" />
           </IconButton>
         </span>
       </div>

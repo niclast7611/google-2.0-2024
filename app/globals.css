@@ -10,4 +10,12 @@
   .button {
     @apply bg-[#f8f9fa] p-3 rounded-md ring-gray-200 text-sm text-gray-800 hover:ring-1 focus:outline-none active:ring-gray-300 hover:shadow-md dark:bg-zinc-700 dark:text-zinc-400 dark:ring-opacity-50
   }
+
+  .icon {
+    @apply h-4 w-4 text-zinc-900
+  }
+
+  .mail-page-button {
+    @apply py-2 px-4 rounded-full border-[1px] border-gray-600 text-gray-600 hover:bg-gray-100 flex text-sm
+  }
 }

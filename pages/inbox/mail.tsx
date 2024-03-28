@@ -78,15 +78,15 @@ const Mail = (props: Props) => {
             </p>
 
             <div className="flex items-center space-x-2 pt-2">
-              <button className="py-2 px-4 rounded-full border-[1px] border-gray-600 text-gray-600 hover:bg-gray-100 flex">
+              <button className="mail-page-button">
                 <LuReply className="h-5 w-5 mr-3" />
                 Reply
               </button>
-              <button className="py-2 px-4 rounded-full border-[1px] border-gray-600 text-gray-600 hover:bg-gray-100 flex">
+              <button className="mail-page-button">
                 <LuReplyAll className="h-5 w-5 mr-3" />
                 Reply All
               </button>
-              <button className="py-2 px-4 rounded-full border-[1px] border-gray-600 text-gray-600 hover:bg-gray-100 flex">
+              <button className="mail-page-button">
                 <LuForward className="h-5 w-5 mr-3" />
                 Forward
               </button>
