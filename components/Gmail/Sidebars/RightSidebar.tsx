@@ -6,7 +6,7 @@ type Props = {};
 
 const RightSidebar = (props: Props) => {
   return (
-    <div className="px-1 pt-4 divide-y-[1px] divide-gray-200">
+    <div className="px-1 pt-4 divide-y-[1px] divide-gray-200 hidden lg:flex lg:flex-col">
       <div className="flex flex-col space-y-5 pb-5">
         <IconButton>
           <img

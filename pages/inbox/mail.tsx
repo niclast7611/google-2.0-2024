@@ -25,7 +25,7 @@ const Mail = (props: Props) => {
         {/* main email */}
         <section className="h-full overflow-auto bg-white rounded-xl mt-2 w-full">
           <MailHeader />
-          <div className="m-4 pl-14 flex flex-col space-y-5">
+          <div className="mx-8 my-4 sm:m-4 sm:pl-14 flex flex-col space-y-5">
             <div className="flex justify-between items-center">
               <span>
                 <h1 className="text-3xl font-medium">Title</h1>
@@ -41,7 +41,7 @@ const Mail = (props: Props) => {
             </div>
 
             <div className="flex justify-between">
-              <div className="flex items-center space-x-2">
+              <div className="flex items-start sm:items-center sm:space-x-2 sm:flex-row flex-col">
                 {/* <Avatar /> */}
                 <h2 className="font-semibold text-lg">Nic Last</h2>
                 <p className="text-xs text-gray-500">
@@ -49,16 +49,16 @@ const Mail = (props: Props) => {
                 </p>
               </div>
               <div className="flex items-center space-x-2">
-                <p className="text-xs text-gray-500 pr-2">
+                <p className="text-xs text-gray-500 pr-2 sm:inline-flex hidden">
                   Dec 12, 2023, 12:00 PM
                 </p>
-                <IconButton>
+                <IconButton className="hidden sm:inline-flex">
                   <FaRegStar className="h-5 w-5" />
                 </IconButton>
-                <IconButton>
+                <IconButton className="hidden sm:inline-flex">
                   <MdOutlineEmojiEmotions className="h-5 w-5" />
                 </IconButton>
-                <IconButton>
+                <IconButton className="hidden sm:inline-flex">
                   <LuReply className="h-5 w-5" />
                 </IconButton>
                 <IconButton>
@@ -82,7 +82,7 @@ const Mail = (props: Props) => {
                 <LuReply className="h-5 w-5 mr-3" />
                 Reply
               </button>
-              <button className="mail-page-button">
+              <button className="mail-page-button hidden sm:inline-flex">
                 <LuReplyAll className="h-5 w-5 mr-3" />
                 Reply All
               </button>

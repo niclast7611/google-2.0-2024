@@ -13,7 +13,7 @@ type Props = {};
 
 const LeftSidebar = (props: Props) => {
   return (
-    <section className="hidden sm:inline-flex w-1/5">
+    <section className="hidden lg:inline-flex w-1/5">
       <div className="flex flex-col w-full">
         <button className="flex p-4 items-center space-x-4 rounded-xl hover:shadow-xl bg-[#C1E7FE] hover:ring-1 ring-[#C1E7FE]/40 ml-3 my-3 w-fit">
           <MdOutlineEdit className="h-5 w-5 mr-4" />

@@ -32,29 +32,32 @@ const MailHeader = (props: Props) => {
           <IconButton>
             <HiOutlineArchiveBoxArrowDown className="icon" />
           </IconButton>
-          <IconButton>
+          {/* Hide on small screens */}
+          <IconButton className="hidden sm:inline-flex">
             <RiSpam2Line className="icon" />
           </IconButton>
           <IconButton>
             <FaRegTrashAlt className="icon" />
           </IconButton>
+          {/* Hide on small screens */}
+          <IconButton className="hidden sm:inline-flex">
+            <FaRegClock className="icon" />
+          </IconButton>
         </span>
-        <span className="flex space-x-3 px-3 border-l-[1px] border-gray-200">
+        <span className="flex space-x-3 sm:px-3 sm:border-l-[1px] sm:border-gray-200">
           <IconButton>
             <MdOutlineMarkEmailUnread className="icon" />
           </IconButton>
-          <IconButton>
-            <FaRegClock className="icon" />
-          </IconButton>
-          <IconButton>
+          {/* Hide on small screens */}
+          <IconButton className="hidden sm:inline-flex">
             <MdAddTask className="icon" />
           </IconButton>
-        </span>
-        <span className="flex space-x-3 px-3 border-l-[1px] border-gray-200">
-          <IconButton>
+          {/* Hide on small screens */}
+          <IconButton className="hidden sm:inline-flex">
             <MdDriveFileMoveOutline className="icon" />
           </IconButton>
-          <IconButton>
+          {/* Hide on small screens */}
+          <IconButton className="hidden sm:inline-flex">
             <MdLabelOutline className="icon" />
           </IconButton>
           <IconButton>
@@ -62,12 +65,14 @@ const MailHeader = (props: Props) => {
           </IconButton>
         </span>
       </div>
-      <div className="flex items-center justify-center space-x-5">
+      <div className="items-center justify-center space-x-5 hidden sm:inline-flex">
         <p className="text-xs text-gray-400">1-20 of 20</p>
         <span className="flex items-center space-x-2">
+          {/* Hide on small screens */}
           <IconButton>
             <FaChevronLeft className="text-gray-400 w-3 h-3" />
           </IconButton>
+          {/* Hide on small screens */}
           <IconButton>
             <FaChevronRight className="text-gray-400 w-3 h-3" />
           </IconButton>

@@ -11,8 +11,8 @@ type Props = {};
 const GmailHeader = (props: Props) => {
   return (
     <header className="flex w-full px-3 justify-between text-sm text-gray-700 items-center border dark:border-[0.5px] border-gray-200">
-      <div className="flex space-x-4 items-center">
-        <IconButton className="dark:text-zinc-300">
+      <div className="flex sm:space-x-4 items-center">
+        <IconButton className="dark:text-zinc-300 hidden sm:inline-flex">
           <GiHamburgerMenu className="h-5 w-5" />
         </IconButton>
         <img
@@ -21,7 +21,7 @@ const GmailHeader = (props: Props) => {
           className="h-[4.5rem] w-28 cursor-pointer"
         />
       </div>
-      <form className="flex flex-grow px-3 ml-10 mr-5 max-w-xl items-center h-12 bg-[#E9F1FB] rounded-full">
+      <form className="flex flex-grow px-3 sm:ml-10 mx-4 sm:mr-5 max-w-xl items-center h-12 bg-[#E9F1FB] rounded-full">
         <IconButton className="sm:mr-3">
           <IoIosSearch className="h-5 w-5 dark:text-zinc-300 " />
         </IconButton>
@@ -30,14 +30,14 @@ const GmailHeader = (props: Props) => {
           placeholder="Search mail"
           className="flex-grow w-full focus:outline-none bg-transparent"
         />
-        <IconButton className="sm:ml-3">
+        <IconButton className="sm:ml-3 hidden sm:inline-flex">
           <IoMdOptions className="h-5 w-5 dark:text-zinc-300 " />
         </IconButton>
       </form>
 
       <div className="flex space-x-2 items-center ">
         <Popover />
-        <IconButton className="dark:text-zinc-300 ">
+        <IconButton className="dark:text-zinc-300 hidden sm:inline-flex">
           <IoMdNotifications className="h-5 w-5" />
         </IconButton>
         <Avatar

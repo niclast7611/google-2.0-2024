@@ -7,7 +7,7 @@ type Props = {};
 
 const SecondaryHeader = (props: Props) => {
   return (
-    <div className="border-b-[1px] flex">
+    <div className="border-b-[1px] flex overflow-x-scroll scrollbar-hide">
       <SecondaryHeaderButtons
         icon={<MdInbox className="h-4 w-4 mr-3" />}
         title="Primary"
