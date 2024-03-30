@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { MdOutlineEdit } from "react-icons/md";
 import { MdInbox } from "react-icons/md";
 import { FaRegStar, FaRegClock } from "react-icons/fa";
@@ -8,14 +8,20 @@ import SidebarButton from "./SidebarButton";
 import { IoMdPerson, IoMdCall } from "react-icons/io";
 import { MdVideoChat } from "react-icons/md";
 import { IconButton } from "@mui/material";
+import ComposeEmailPopover from "../ComposeEmailPopover";
 
 type Props = {};
 
 const LeftSidebar = (props: Props) => {
+  const [openComposeForm, setOpenComposeForm] = useState(false);
+
   return (
-    <section className="hidden lg:inline-flex w-1/5">
+    <section className="hidden lg:inline-flex w-1/5 flex-shrink-0 min-w-[20%]">
       <div className="flex flex-col w-full">
-        <button className="flex p-4 items-center space-x-4 rounded-xl hover:shadow-xl bg-[#C1E7FE] hover:ring-1 ring-[#C1E7FE]/40 ml-3 my-3 w-fit">
+        <button
+          className="flex p-4 items-center space-x-4 rounded-xl hover:shadow-xl bg-[#C1E7FE] hover:ring-1 ring-[#C1E7FE]/40 ml-3 my-3 w-fit"
+          onClick={() => setOpenComposeForm(true)}
+        >
           <MdOutlineEdit className="h-5 w-5 mr-4" />
           Compose
         </button>
@@ -66,6 +72,9 @@ const LeftSidebar = (props: Props) => {
           </IconButton>
         </div>
       </div>
+      {openComposeForm && (
+        <ComposeEmailPopover setOpenComposeForm={setOpenComposeForm} />
+      )}
     </section>
   );
 };

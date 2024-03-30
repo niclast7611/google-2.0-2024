@@ -16,14 +16,14 @@ type Props = {};
 
 const Mail = (props: Props) => {
   return (
-    <div className="h-screen overflow-hidden bg-slate-50 dark:bg-zinc-800 w-full">
+    <div className="h-screen overflow-hidden bg-slate-50 dark:bg-zinc-800">
       <GmailHeader />
 
-      <div className="flex h-full overflow-hidden w-full">
+      <div className="flex h-full overflow-hidden">
         {/* left sidebar */}
         <LeftSidebar />
         {/* main email */}
-        <section className="h-full overflow-auto bg-white rounded-xl mt-2 w-full">
+        <section className="flex-grow h-full overflow-auto bg-white rounded-xl mt-2 min-w-0">
           <MailHeader />
           <div className="mx-8 my-4 sm:m-4 sm:pl-14 flex flex-col space-y-5">
             <div className="flex justify-between items-center">

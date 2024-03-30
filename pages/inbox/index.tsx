@@ -8,7 +8,7 @@ type Props = {};
 
 const Inbox = (props: Props) => {
   return (
-    <div className="h-screen overflow-hidden bg-slate-50 dark:bg-zinc-800">
+    <div className="h-screen overflow-hidden bg-slate-50 dark:bg-zinc-800 relative">
       <GmailHeader />
 
       <div className="flex h-full overflow-hidden">

@@ -49,7 +49,7 @@ const EmailList = (props: Props) => {
     },
   ];
   return (
-    <section className="flex-grow h-full overflow-auto bg-white rounded-xl mt-2">
+    <section className="flex-grow h-full overflow-auto bg-white rounded-xl mt-2 min-w-0">
       <Header />
       <SecondaryHeader />
       {/* Email list items here */}

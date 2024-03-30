@@ -18,4 +18,8 @@
   .mail-page-button {
     @apply py-2 px-4 rounded-full border-[1px] border-gray-600 text-gray-600 hover:bg-gray-100 flex text-sm
   }
+
+  .compose-email-icon-button {
+    @apply h-5 w-5 text-zinc-900 hidden xl:inline-flex
+  }
 }
