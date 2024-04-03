@@ -43,16 +43,18 @@ const OptionsPopover = ({ anchorEl, setAnchorEl }: Props) => {
       <div className="my-8 overflow-hidden w-72 text-center flex flex-wrap justify-evenly">
         <ThemeSwitcher />
         <PopoverButton
-          url={
+          img={
             "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png"
           }
           title={"Gmail"}
+          url="/inbox"
         />
         <PopoverButton
-          url={
+          img={
             "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Google_Docs_logo_%282014-2020%29.svg/1481px-Google_Docs_logo_%282014-2020%29.svg.png"
           }
           title={"Docs"}
+          url="/"
         />
       </div>
     </Popover>

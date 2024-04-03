@@ -1,7 +1,5 @@
 import React, { useRef } from "react";
-import { BsFillGrid3X3GapFill } from "react-icons/bs";
 import Avatar from "@/components/Avatar";
-import { IconButton } from "@mui/material";
 import { IoIosSearch, IoMdClose } from "react-icons/io";
 import { FaMicrophone } from "react-icons/fa";
 import { useRouter } from "next/router";
@@ -49,11 +47,7 @@ const SearchPageHeader = (props: Props) => {
         </form>
         <div className="flex sm:space-x-4 items-center ml-auto">
           <Popover />
-          <Avatar
-            url={
-              "https://img.buzzfeed.com/buzzfeed-static/complex/images/rrgyzeu7ucbf5styxkuw/drake-21-savage-her-loss-album-cver.jpg?output-format=jpg&output-quality=auto"
-            }
-          />
+          <Avatar />
         </div>
       </div>
       <HeaderOptions />

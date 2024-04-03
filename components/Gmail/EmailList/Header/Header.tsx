@@ -12,22 +12,22 @@ const Header = (props: Props) => {
     <header className="flex justify-between p-4">
       <div className="flex space-x-4 items-center">
         <span className="flex space-x-1 items-center">
-          <MdOutlineCheckBoxOutlineBlank className="text-gray-500 w-4 h-4" />
-          <FaCaretDown className="text-gray-500 w-3 h-3" />
+          <MdOutlineCheckBoxOutlineBlank className="dark:text-zinc-200 text-gray-500 w-4 h-4" />
+          <FaCaretDown className="dark:text-zinc-200 text-gray-500 w-3 h-3" />
         </span>
 
-        <IoMdRefresh className="text-gray-500 w-4 h-4" />
-        <SlOptionsVertical className="text-gray-500 w-3 h-3" />
+        <IoMdRefresh className="dark:text-zinc-200 text-gray-500 w-4 h-4" />
+        <SlOptionsVertical className="dark:text-zinc-200 text-gray-500 w-3 h-3" />
       </div>
 
       <div className="flex items-center justify-center space-x-5">
-        <p className="text-xs text-gray-400">1-20 of 20</p>
+        <p className="text-xs text-gray-400 dark:text-zinc-200">1-20 of 20</p>
         <span className="flex items-center space-x-2">
           <IconButton>
-            <FaChevronLeft className="text-gray-400 w-3 h-3" />
+            <FaChevronLeft className="text-gray-400 w-3 h-3 dark:text-zinc-200" />
           </IconButton>
           <IconButton>
-            <FaChevronRight className="text-gray-400 w-3 h-3" />
+            <FaChevronRight className="text-gray-400 w-3 h-3 dark:text-zinc-200" />
           </IconButton>
         </span>
       </div>

@@ -32,7 +32,7 @@ export default Search;
 export const getServerSideProps: GetServerSideProps = async (
   context: GetServerSidePropsContext
 ) => {
-  const useDummyData = true;
+  const useDummyData = false;
   const startIndex = context.query.start || "0";
 
   const data = useDummyData

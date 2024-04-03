@@ -1,6 +1,7 @@
 import React, { MouseEvent, useState } from "react";
 import Avatar from "@/components/Avatar";
 import Popover from "../../Popover";
+import { useRouter } from "next/router";
 type Props = {};
 
 const HomePageHeader = (props: Props) => {
@@ -10,6 +11,7 @@ const HomePageHeader = (props: Props) => {
     setAnchorEl(event.currentTarget);
   };
 
+  const router = useRouter();
   return (
     <header className="flex w-full p-5 justify-between text-sm text-gray-700">
       <div className="flex space-x-4 items-center">
@@ -18,15 +20,13 @@ const HomePageHeader = (props: Props) => {
       </div>
 
       <div className="flex space-x-4 items-center">
-        <p className="link">Gmail</p>
+        <p className="link" onClick={() => router.push("/inbox")}>
+          Gmail
+        </p>
         <p className="link">Images</p>
         <Popover />
 
-        <Avatar
-          url={
-            "https://img.buzzfeed.com/buzzfeed-static/complex/images/rrgyzeu7ucbf5styxkuw/drake-21-savage-her-loss-album-cver.jpg?output-format=jpg&output-quality=auto"
-          }
-        />
+        <Avatar />
       </div>
     </header>
   );

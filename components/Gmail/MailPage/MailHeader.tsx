@@ -22,10 +22,10 @@ type Props = {};
 const MailHeader = (props: Props) => {
   const router = useRouter();
   return (
-    <header className="flex p-4 items-center justify-between">
+    <header className="flex p-4 items-center justify-between dark:bg-[#474747]">
       <div className="flex">
         <IconButton onClick={() => router.push("/inbox")}>
-          <IoMdArrowBack className="h-5 w-5 text-zinc-900" />
+          <IoMdArrowBack className="h-5 w-5 text-zinc-900  dark:text-zinc-200" />
         </IconButton>
 
         <span className="flex space-x-3 px-3">
@@ -44,7 +44,7 @@ const MailHeader = (props: Props) => {
             <FaRegClock className="icon" />
           </IconButton>
         </span>
-        <span className="flex space-x-3 sm:px-3 sm:border-l-[1px] sm:border-gray-200">
+        <span className="flex space-x-3 sm:px-3 sm:border-l-[1px] sm:border-gray-200 dark:border-slate-200">
           <IconButton>
             <MdOutlineMarkEmailUnread className="icon" />
           </IconButton>
@@ -66,15 +66,15 @@ const MailHeader = (props: Props) => {
         </span>
       </div>
       <div className="items-center justify-center space-x-5 hidden sm:inline-flex">
-        <p className="text-xs text-gray-400">1-20 of 20</p>
+        <p className="text-xs text-gray-400  dark:text-zinc-200">1-20 of 20</p>
         <span className="flex items-center space-x-2">
           {/* Hide on small screens */}
           <IconButton>
-            <FaChevronLeft className="text-gray-400 w-3 h-3" />
+            <FaChevronLeft className="text-gray-400 w-3 h-3  dark:text-zinc-200" />
           </IconButton>
           {/* Hide on small screens */}
           <IconButton>
-            <FaChevronRight className="text-gray-400 w-3 h-3" />
+            <FaChevronRight className="text-gray-400 w-3 h-3  dark:text-zinc-200" />
           </IconButton>
         </span>
       </div>

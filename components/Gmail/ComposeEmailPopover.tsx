@@ -26,30 +26,30 @@ const ComposeEmailPopover = ({ setOpenComposeForm }: Props) => {
         <h4 className="text-sm font-medium">New Message</h4>
         <div className="text-gray-900">
           <IconButton>
-            <FaRegWindowMinimize className="icon h-3 w-3" />
+            <FaRegWindowMinimize className="icon  dark:text-gray-900 h-3 w-3" />
           </IconButton>
           <IconButton>
-            <FaExpandAlt className="icon" />
+            <FaExpandAlt className="icon  dark:text-gray-900" />
           </IconButton>
           <IconButton onClick={() => setOpenComposeForm(false)}>
-            <IoMdClose className="icon h-5 w-5" />
+            <IoMdClose className="icon dark:text-gray-900 h-5 w-5" />
           </IconButton>
         </div>
       </div>
 
-      <div className="flex-grow overflow-auto">
+      <div className="flex-grow overflow-auto ">
         <div className="flex flex-col space-y-4 pt-4">
           <input
             type="text"
             placeholder="Recipients"
-            className="mx-4 border-b-[1px] border-gray-200 outline-none"
+            className="mx-4 border-b-[1px] border-gray-200 outline-none bg-transparent bg-transparent"
           />
           <input
             type="text"
             placeholder="Subject"
-            className="mx-4 border-b-[1px] border-gray-200 outline-none"
+            className="mx-4 border-b-[1px] border-gray-200 outline-none bg-transparent"
           />
-          <textarea className="mx-4 mb-4 outline-none h-[20rem] overflow-y-scroll scrollbar-hide" />
+          <textarea className="mx-4 mb-4 outline-none bg-transparent h-[20rem] overflow-y-scroll scrollbar-hide" />
         </div>
       </div>
 
